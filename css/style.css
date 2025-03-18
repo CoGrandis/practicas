@@ -8,7 +8,6 @@
 body{
     height:100vh;/*unidad VIEWPORT HEIGHT*/
     width:100vw;/*unidad VIERWPORT WIDTH*/
-    background-color: brown;
 }
 
 .contenedor{
@@ -21,10 +20,39 @@ main{
     height: 100%;
     width: 60%;
     background-color:white;
+    .imagenPerfil{
+        height: 25%;
+        width: 100%;
+    }
+    .perfil{
+        height: 25%;
+        width: 100%;
+    }
+    .experienciaLaboral{
+        height: 25%;
+        width: 100%;
+    }
 }
 
 aside{
     height: 100%;
     width: 40%;
-    background-color:aquamarine;
+    background-color:rgb(11, 88, 95);
+    .datosPersonales{
+        background-color: aquamarine;
+        height: 25%;
+        width: 100%;
+    }
+    .socialMedia{
+        height: 25%;
+        width: 100%;
+    }
+    .estudiosCursados{
+        height: 25%;
+        width: 100%;
+    }
+    .idiomas{
+        height: 25%;
+        width: 100%;
+    }
 }
