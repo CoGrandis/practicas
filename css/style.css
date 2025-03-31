@@ -19,16 +19,22 @@ body{
 }
 
 section{
-    padding: 20px;
+    padding: 30px;
 }
 
 main{
     height: 100%;
     width: 60%;
     background-color:white;
+    color:rgb(9, 36, 57);
     .imagenPerfil{
         height: 25%;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        img{
+            height: 200px;
+        }
     }
     .titulo{
         text-align: center;
@@ -40,19 +46,45 @@ main{
     .experienciaLaboral{
         height: 25%;
         width: 100%;
+        section{
+            padding: 0;
+            margin-top: 8px;
+            p, h4{
+                margin-bottom: 8px;
+            }
+            article{
+                padding: 20px;
+            }
+        }
     }
 }
 
 aside{
     height: 100%;
     width: 40%;
-    background-color:rgb(11, 88, 95);
+    background-color:rgb(9, 36, 57);
     color: white;
     .datosPersonales{
-        background-color: aquamarine;
+        background-color:rgb(121, 235, 213);
         height: 25%;
         width: 100%;
         color: black;
+        section{
+            margin-top: 15px;
+            padding: 0;
+        }
+        article{
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        img{
+            height: 40px;
+            padding: 5px;
+            background-color:rgb(9, 36, 57);
+            border-radius: 5px;
+            margin-right: 15px;
+        }   
     }
     .socialMedia{
         display: flex;
@@ -63,15 +95,58 @@ aside{
         section{
                 flex: 0 48%;
                 height: 48%;
-                margin-bottom: 2%; 
+                margin-bottom: 2%;
+                display: flex; 
+                align-items: center;
+                p{
+                    font-size: large;
+                    font-weight: bold;
+                }
+        }
+        img{
+            height: 60px;
+            padding: 5px;
+            background-color: white;
+            border-radius: 5px;
+            margin-right: 15px;
         }
     }
     .estudiosCursados{
         height: 25%;
         width: 100%;
+        section{
+            padding: 0;
+            margin-top: 8px;
+            p, h4{
+                margin-bottom: 8px;
+            }
+            article{
+                padding: 20px;
+            }
+        }
     }
     .idiomas{
         height: 25%;
         width: 100%;
+        section{
+            padding: 0;
+            margin-top: 8px;
+        }
+        .idioma{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            p{
+                width: 50px;
+                padding-top: 8px;
+            }
+        }
+        .nivel{
+            display: flex;
+            img{    
+                margin-left: 50px;
+                height: 20px;
+            }
+        }
     }
 }
