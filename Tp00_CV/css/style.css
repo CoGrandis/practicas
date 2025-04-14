@@ -27,6 +27,10 @@ main{
     width: 60%;
     background-color:white;
     color:rgb(9, 36, 57);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
     .imagenPerfil{
         height: 25%;
         width: 100%;
