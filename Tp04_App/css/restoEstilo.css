@@ -28,6 +28,33 @@
     box-shadow:  0 0 10px -3px black;
 }
 
+.restaurant-card{
+    background-color: red;
+    width: 361px;
+    height: 146px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.restaurant-card__image{
+    background-color: aqua;
+    width: 25%;
+    height: 100%;
+    border-radius:  20px 0 0px 20px;
+
+}
+
+.restaurant-card__info{
+    background-color: blue;
+    width: 80%;
+    height: 100%;
+    border-radius:  0 20px 20px 20px;
+    padding: 20px;
+}
 
 
 
