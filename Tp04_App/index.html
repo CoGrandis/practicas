@@ -6,37 +6,113 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Assets/css/estilosGenerales.css">
     <link rel="stylesheet" href="css/restoEstilo.css">
+    <link rel="stylesheet" href="../Assets/fonts/fontawesom/fawesome-all.css">
     <title>Express Food</title>
 </head>
 <body>
-    <main>
+    <main class="container">
+        <section class="container__top">
+        <header class="container__header-img">
+            <img src="./img/restaurant-411942_1280.jpg" alt="">
+        </header>
+         <section class="search-bar">
+                <div class="search-bar__icon icon--1"><i class="fa-solid fa-location-dot fa-xl"></i></div>
+                <div class="search-bar__input"></div>
+                <div class="search-bar__icon icon--2"><i class="fa-solid fa-magnifying-glass fa-xl"></i></div>
+            </section>
+        <section class="container__menu">
+            <ul class="menu">
+                <li><i class="fa-light fa-taco fa-2xl"></i><p>TACOS</p></li>
+                <li><i class="fa-light fa-burger fa-2xl"></i><p>HAMBURGUESA</p></li>
+                <li><i class="fa-light fa-ice-cream fa-2xl"></i><p>HELADO</p></li>
+                <li><i class="fa-light fa-steak fa-2xl"></i><p>CARNE</p></li>
+                <li><i class="fa-light fa-salad fa-2xl"></i><p>ENSALADA</p></li>
+                <li><i class="fa-light fa-bowl-hot fa-2xl"></i><p>SOPA</p></li>
+                <li><i class="fa-light fa-pizza-slice fa-2xl"></i><p>PIZZA</p></li>
+            </ul>
+        </section>
+        </section>
+       
+        <section class="container__reco">
+        <h4>RECOMENDACIONES</h4>
         <section class="container-card">
             <article class="restaurant-card">
                 <div class="restaurant-card__image">
-                    <img src="./img/restaurant.jpg" alt="jfjf">
+                    <img src="./img/restaurant-646687_1280.jpg" alt="jfjf">
                 </div>
                 <div class="restaurant-card__info">
-                    <h3>Nombre Restaurante</h3>
-                    <p>Detalle restaurante</p>  
-                    <p>Horario</p>  
-                    <div class="info__star-rating"></div>
+                    <h4 class="restaurant-card__name">Gran Alexander</h4>
+                    <div class="restaurant-card__text">
+                        <p>Restaurante Griego 20 min</p>  
+                        <p>9:00-11:00</p>
+                    </div>
+                    <div class="info__star-rating">
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-2xs"></i>
+                        </div>
+                        <div class="rating">(55)</div>
+
+                    </div>
                 </div>
                 <div class="restaurant-card__rating">4.3</div>
             </article>
             <article class="restaurant-card">
                 <div class="restaurant-card__image">
-                    <img src="./img/restaurant.jpg" alt="jfjf">
+                    <img src="./img/outdoor-dining-1846137_1280.jpg" alt="jfjf">
                 </div>
                 <div class="restaurant-card__info">
-                    <h3>Nombre Restaurante</h3>
-                    <p>Detalle restaurante</p>  
-                    <p>Horario</p>  
-                    <div class="info__star-rating"></div>
+                    <h4 class="restaurant-card__name">Dolce Italia</h4>
+                    <div class="restaurant-card__text">
+                        <p>Restaurante Italiano 35 min</p>  
+                        <p>7:00-11:00</p>
+                    </div> 
+                    <div class="info__star-rating">
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-2xs"></i>
+                        </div>
+                        <div class="rating">(55)</div>
+
+                    </div>
                 </div>
                 <div class="restaurant-card__rating">4.3</div>
             </article>
+            <article class="restaurant-card">
+                <div class="restaurant-card__image">
+                    <img src="./img/restaurant-4011989_1280.jpg" alt="jfjf">
+                </div>
+                <div class="restaurant-card__info">
+                    <h4 class="restaurant-card__name">La Belle Époque</h4>
+                    <div class="restaurant-card__text">
+                        <p>Restaurante Frances 42min</p>  
+                        <p>9:00-12:00</p>
+                    </div> 
+                    <div class="info__star-rating">
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star fa-2xs"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-2xs"></i>
+                        </div>
+                        <div class="rating">(55)</div>
+
+                    </div>
+                </div>
+                <div class="restaurant-card__rating">4.3</div>
+            </article>
+        </section>
         </section>
     </main>
 </body>

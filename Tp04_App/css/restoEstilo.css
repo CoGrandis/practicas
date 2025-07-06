@@ -2,25 +2,127 @@
     --primary:#23D3F2;
     --secondary:#0A929C;
     --lightText:#B8B8B8;
+    --darkText:#919191;
 }
 
 body{
     min-height: 100vh;
-    font-family: Arial, sans-serif;
     color: black;
     font-family: "Aoboshi One", serif;
 }
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container__top{
+    width: 100%;
+    height: 508px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container__header-img{
+    width: 100%;
+    height: 360px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+.container__menu{
+    width: 100%;
+    height: 148px;
+    display: flex;
+    align-items: center;
+    font-family: "Saira Condensed", sans-serif;
+    color: var(--darkText);
+    padding: 30px 10px;
+    overflow-x: scroll;
+    scrollbar-width: 0px;
+    .menu{
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style-type:none;
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:fit-content;
+        width: fit-content;
+        padding: 10px;
+        gap: 25px;
+    }
+    p{
+    font-size: 8px ;
+
+    }
+}
+.search-bar{
+    position: absolute;
+    background-color: white;
+    top: 334px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    width: 323px;
+    height: 46px;
+    box-shadow:  0px 1px 10px grey;
+
+}
+.search-bar__icon{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icon--1{
+        background-color: var(--secondary);
+        color: white;
+}
+.icon--2{
+        background-color: white;
+        color:var(--secondary);
+}
+.search-bar__input{
+    flex: 4;
+}
+.container__reco{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 15px;
+    h4{
+        font-family: "Inter", sans-serif;
+        font-weight:400;
+        color: var(--lightText);
+        font-size: 12px;
+    }
+}
+
 
 .container-card{
     display: flex;
     align-items: center;
     justify-content: center;
     padding:  20px 10px ;
-    gap: 20px;
+    gap: 35px;
 }
 
 .restaurant-card{
-    background-color: red;
     width: 361px;
     height: 146px;
     border-radius: 15px;
@@ -29,12 +131,16 @@ body{
     justify-content: flex-start;
     position: relative;
     align-items: center;
-    box-shadow: grey 0px 5px 10px;
+    box-shadow:  0px 10px 20px grey;
+    .restaurant-card__name{
+        font-family: "Aoboshi One", serif;
+        font-size: 16px;
+        color: black;
+    }
 }
 
 .restaurant-card__image{
-    background-color: aqua;
-    width: 40%;
+    width: 169px;
     height: 100%;
     border-radius:  15px 0 0px 15px;
     img{
@@ -42,24 +148,27 @@ body{
         width: 100%;
         height: 100%;
         object-fit: cover;
+
     }
 }
 
 .restaurant-card__info{
     background-color: white;
-    width: 70%;
+    width: 217px;
     height:100%;
-    border-radius:  0 15px 15px 15px;
+    border-radius: 2px;
     padding: 15px 20px ;
+    border-radius:   0px 0px 15px 15px;
     position: absolute;
     top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    p{
+    .restaurant-card__text{
         color: var(--lightText);
-        font-weight: normal;
+        font-size: 12px;
+        font-weight:400;
     }
 }
 
@@ -70,15 +179,26 @@ body{
     background-color:var(--primary);
     position: absolute;
     color: white;
-    font-weight: bolder;
     top: 0;
     right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+.info__star-rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.star-rating{
+    color: var(--primary);
 }
 
-
+.rating{
+    font-size: 10px;
+    color: var(--lightText);
+}
 @media screen and (orientation:portrait) {
     .container-card{
         flex-direction: column;
