@@ -5,8 +5,14 @@
     --darkText:#919191;
 }
 
+a{
+    text-decoration: none;
+
+}
+
 body{
     min-height: 100vh;
+    width: 100vw;
     color: black;
     font-family: "Aoboshi One", serif;
 }
@@ -15,6 +21,8 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    gap: 0;
 }
 .container__top{
     width: 100%;
@@ -45,6 +53,24 @@ body{
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+    }
+    .fa-xmark{
+        position: absolute;
+        top:0 ;
+        left: 0;
+        color: white;
+        padding: 30px 20px;
+    }
+    .fa-cart-shopping{
+        color: white;
+        padding: 30px 20px;
+        position: absolute;
+        top:0 ;
+        right: 0;
+    }
+    .fa-cart-shopping:hover{
+        text-shadow:  0px 1px 10px grey;
 
     }
 }
@@ -94,7 +120,8 @@ body{
 
 }
 .search-bar__icon{
-    flex: 1;
+    flex: 1 1 0;
+    width: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,8 +135,13 @@ body{
         background-color: white;
         color:var(--secondary);
 }
+.icon--2:hover{
+    background-color: var(--secondary);
+    color: white;
+}
 .search-bar__input{
-    flex: 4;
+    flex: 4 4 0;
+    width: 0;
 }
 .container__reco{
     width: 100%;
@@ -281,6 +313,98 @@ body{
 .nav-link:hover{
     color: black;
     text-shadow: 1px 5px  10px  grey;
+
+}
+
+.container__header{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    background-color: white;
+
+    .nav-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 0;
+        width: 0;
+        color: var(--darkText);
+
+    }
+    .header__page{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 40px;
+        justify-content: center;
+        flex: 6 6 0;
+        width: 0;
+    }
+
+}
+.container__platos{
+    width: 100%;
+    height: fit-content ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 35px 10px;
+    overflow-y: scroll;
+    align-self: center;
+    justify-self: center;
+
+}
+.plato{
+    height: 150px;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    .plato__img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        height: 100%;
+        flex:2;
+        img{
+            height: 150px;
+            width: 150px;
+        }
+    }
+    .plato__description{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        color: var(--darkText);
+        flex:3;
+        
+        h3{
+            font-size: 24px;
+            font-weight: 400;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .precio{
+        background-color: var(--primary);
+        height: 32px;
+        width: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 10px 0 10px 0 ;
+    }
+
 
 }
 @media screen and (orientation:portrait) {
