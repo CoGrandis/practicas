@@ -414,8 +414,7 @@ body{
     height: 600px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 45;
+    gap: 45px   ;
     background-color: #F5F5F5;
     color: var(--darkText);
     overflow-y: hidden;
@@ -445,12 +444,32 @@ body{
     }
     
 }
-
+.especificaciones{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    justify-content: flex-start;
+    p{
+        width: 100%;
+        border-bottom: solid var(--darkText) 2px;
+    }
+}
 .cantidad{
     background-color: var(--primary);
 
 }
+.botones{
+    width: 100%;
+    height: 63;
+    display: flex;
+    gap: 5px;
+    .boton_agregar{
+        height: 100%    ;
+    }
+    .contador{
 
+    }
+}
 @media screen and (orientation:portrait) {
     .container-card{
         flex-direction: column;
