@@ -460,14 +460,38 @@ body{
 }
 .botones{
     width: 100%;
-    height: 63;
+    height: 63px;
     display: flex;
     gap: 5px;
     .boton_agregar{
-        height: 100%    ;
+        height: 100%;
+        color: white;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary);
+        width: 203px;
+        h4{
+        font-weight: 300;
+
+        }
     }
     .contador{
-
+        display: flex;
+        height: 100%;
+        width: 163px;
+        color: white;
+        span{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #23D3F2;
+        }
+        .contador_cantidad{
+            flex:2;
+        }
     }
 }
 @media screen and (orientation:portrait) {
